@@ -1,0 +1,16 @@
+version: 1
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8.2
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - pip install django
+  post_build:
+    commands:
+      - echo Build completed on `date`
